@@ -1,0 +1,179 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
+nav {
+  height: 60px;
+  background-color: #d3d3d3;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0px 50px 0px 100px; }
+
+nav .logo {
+  font-size: 33px;
+  color: #2f4f4f;
+  font-weight: 600px; }
+
+nav ul {
+  display: flex;
+  list-style: none; }
+
+nav ul li {
+  margin: 0px 5px; }
+
+nav ul li a {
+  text-decoration: none;
+  position: relative;
+  color: #2f4f4f;
+  font-size: 18px;
+  padding: 5px 0;
+  text-transform: uppercase; }
+
+nav ul li a:before {
+  position: absolute;
+  content: "";
+  left: 0;
+  bottom: 0;
+  height: 3px;
+  width: 100%;
+  background-color: #2f4f4f;
+  transform: scaleX(0);
+  transform-origin: right;
+  transition: transform .4s linear; }
+
+nav ul li a:hover:before {
+  transform: scaleX(1);
+  transform-origin: left; }
+
+nav ul li a:active:before {
+  color: #a9a9a9; }
+
+nav ul li a.active {
+  color: #2f4f4f; }
+
+nav .menu-btn i {
+  color: #2f4f4f;
+  font-size: 22px;
+  cursor: pointer;
+  display: none; }
+
+#click {
+  display: none; }
+
+.write-header-1 {
+  font-size: 30px;
+  text-align: center; }
+
+.write-header-2 {
+  font-size: 15px;
+  text-align: center; }
+
+.write-header-3 {
+  font-size: 8px;
+  text-align: center; }
+
+@media only screen and (max-width: 500px) {
+  nav .menu-btn i {
+    display: block; }
+
+  #click:checked ~ .menu-btn i:before {
+    content: "\f00d"; }
+
+  nav ul {
+    position: fixed;
+    top: 60px;
+    left: -100%;
+    background-color: #a9a9a9;
+    height: 100vh;
+    width: 100%;
+    display: block;
+    text-align: center;
+    transition: all 0.3s ease;
+    z-index: 99999; }
+
+  #click:checked ~ ul {
+    left: 0%; }
+
+  nav ul li {
+    margin: 40px 0px; }
+
+  nav ul li a {
+    font-size: 20px;
+    display: block; }
+
+  nav ul li a:hover,
+  nav ul li a.active {
+    color: #2f4f4f;
+    background-color: none; } }
+.header {
+  display: block;
+  position: absolute; }
+  .header div.header {
+    display: block; }
+  .header .background img {
+    width: 100%;
+    display: block;
+    position: absolute;
+    z-index: 0;
+    display: flex; }
+  .header .foto {
+    width: 25%;
+    height: 25%;
+    position: relative;
+    float: right;
+    padding-right: 2.5em;
+    padding-top: 2.5em;
+    z-index: 1; }
+  .header .write-header {
+    color: #F8F8FF;
+    display: flex;
+    float: left;
+    position: relative;
+    padding-top: 10%;
+    padding-left: 7%;
+    padding-bottom: 6%;
+    font-size: auto;
+    z-index: 1; }
+
+@media only screen and (min-width: 501px) and (max-width: 900px) {
+  .foto {
+    padding-right: 4em;
+    padding-top: 4em; }
+
+  .write-header {
+    padding-top: 40%;
+    padding-left: 25%;
+    width: 70%;
+    height: 50%; }
+    .write-header .write-header-1 {
+      font-size: 40px;
+      text-align: center; }
+    .write-header .write-header-2 {
+      font-size: 20px;
+      text-align: center; }
+    .write-header .write-header-3 {
+      font-size: 15px;
+      text-align: center; } }
+@media only screen and (min-width: 901px) {
+  .foto {
+    padding-right: 9em;
+    padding-top: 9em; }
+
+  .write-header {
+    padding-top: 40%;
+    padding-left: 25%;
+    width: 70%;
+    height: 50%; }
+    .write-header .write-header-1 {
+      font-size: 100px;
+      text-align: center; }
+    .write-header .write-header-2 {
+      font-size: 50px;
+      text-align: center; }
+    .write-header .write-header-3 {
+      font-size: 30px;
+      text-align: center; } }
+
+/*# sourceMappingURL=style.css.map */
