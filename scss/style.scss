@@ -15,7 +15,7 @@ $header2:#2f4f4f ;  //darkslategrey;
   //NAV BAR;
   nav{
     height: 60px;
-    background-color: $primary;
+    background-color: #f5f5f5;
     display:flex;
     align-items: center;
     justify-content: space-between;
@@ -165,7 +165,7 @@ $header2:#2f4f4f ;  //darkslategrey;
 
   .write-header{
 
-    color: #F8F8FF;
+    color: $header2;
 
     display: flex;
     float: left;

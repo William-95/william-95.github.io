@@ -5,7 +5,7 @@
 
 nav {
   height: 60px;
-  background-color: #d3d3d3;
+  background-color: #f5f5f5;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -127,7 +127,7 @@ nav .menu-btn i {
     padding-top: 2.5em;
     z-index: 1; }
   .header .write-header {
-    color: #F8F8FF;
+    color: #2f4f4f;
     display: flex;
     float: left;
     position: relative;
