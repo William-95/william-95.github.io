@@ -1,0 +1,65 @@
+<!doctype html>
+<html lang="en">
+  <head>
+
+    <meta charset="utf-8">
+    <title>TEST</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="stylesheet" href="./scss/style.css">
+
+        <!--Js icon-->
+    <script src="https://kit.fontawesome.com/f1335713d8.js" crossorigin="anonymous"></script>
+
+    </head>
+  <body>
+
+      <!--Nav Bar-->
+    <nav>
+    <div class="logo">  </div> <!--spazio per Logo-->
+      <input type="checkbox" id="click">
+      <label for="click"class="menu-btn">
+        <i class="fas fa-bars"></i>
+      </label>
+      <ul class="link-list">
+        <li> <a class="active" href="#">Home</a></li>
+          <li> <a href="#">About</a> </li>
+          <li> <a href="#">Work</a> </li>
+          <li> <a href="#">Contact</a> </li>
+        </ul>
+      </nav>
+
+<!--header-->
+
+      <div class="header">
+
+        <div class="background">
+          <img src="img/header-gray-1.png">
+
+          <div class="write-header">
+            <p ><span class="write-header-1">Ciao,</span><br>
+            <span class="write-header-2">Io sono <b>William Verga</b></span><br>
+            <span class="write-header-3">e sono un Web Developer.</span></p>
+          </div>
+        </div>
+          <img src="img/foto1.png" class="foto">
+        </div>
+
+        <!--About-->
+
+
+    <div class="bio">
+      ciao
+    </div>
+
+
+<!--Work-->
+
+<!--Footer-->
+
+
+
+
+
+  </body>
+</html>
