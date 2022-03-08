@@ -74,6 +74,9 @@ nav .menu-btn i {
   font-size: 8px;
   text-align: center; }
 
+div.bio {
+  display: block; }
+
 @media only screen and (max-width: 500px) {
   nav .menu-btn i {
     display: block; }
@@ -110,14 +113,11 @@ nav .menu-btn i {
 .header {
   display: block;
   position: absolute; }
-  .header div.header {
-    display: block; }
   .header .background img {
     width: 100%;
-    display: block;
+    display: flex;
     position: absolute;
-    z-index: 0;
-    display: flex; }
+    z-index: 0; }
   .header .foto {
     width: 25%;
     height: 25%;
@@ -136,6 +136,8 @@ nav .menu-btn i {
     padding-bottom: 6%;
     font-size: auto;
     z-index: 1; }
+  .header div.bio {
+    display: block; }
 
 @media only screen and (min-width: 501px) and (max-width: 900px) {
   .foto {

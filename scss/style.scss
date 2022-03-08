@@ -92,7 +92,10 @@ $header2:#2f4f4f ;  //darkslategrey;
 
 
 
+div.bio{
+  display:block;
 
+}
 
 
       //MOBILE;
@@ -140,16 +143,14 @@ $header2:#2f4f4f ;  //darkslategrey;
   display:block;
   position: absolute;
 
-  div.header{
-    display: block;
-  }
+
 
   .background img{
     width: 100%;
-    display:block;
-      position: absolute;
-    z-index: 0;
     display:flex;
+    position: absolute;
+    z-index: 0;
+
   }
 
 
@@ -177,6 +178,11 @@ $header2:#2f4f4f ;  //darkslategrey;
     z-index: 1;
     }
 
+    //About;
+
+    div.bio{
+      display:block;
+    }
 
 }
 
