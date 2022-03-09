@@ -16,6 +16,8 @@ $header2:#2f4f4f ;  //darkslategrey;
   box-sizing: border-box;
   }
 
+
+
   //NAV BAR;
   nav{
     height: 60px;
@@ -74,32 +76,22 @@ $header2:#2f4f4f ;  //darkslategrey;
     font-size: 22px;
     cursor: pointer;
     display: none;
-  }
+    }
     #click{
       display: none;
       }
 
 
-    .write-header-1{
-        font-size: 30px;
-        text-align: center;
-        }
-    .write-header-2{
-        font-size: 15px;
-        text-align: center;
-        }
+      div.bg-img{
 
-    .write-header-3{
-        font-size: 8px;
-        text-align: center;
-        }
+          background-image: url(/img/header-gray-2.png);
+          background-size:cover;
+          background-position: center;
+           }
 
+         div.bio{
 
-
-div.bio{
-  display:block;
-
-}
+  }
 
 
       //MOBILE;
@@ -139,53 +131,46 @@ div.bio{
     color: $header2;
     background-color: none;
     }
-}
+
 
 //Header!!
 
-.header{
-  display:block;
-  position: absolute;
 
 
 
-  .background img{
-    width: 100%;
-    display:flex;
-    position: absolute;
-    z-index: 0;
+div.write-header{
+  width: 100%;
+  min-height: 30vh;
+  padding-top:10%;
+  padding-left:7%;
+  font-size: auto;
+  color: $header2;
 
+
+  .write-header-1{
+      font-size: 30px;
+      text-align: center;
+      }
+  .write-header-2{
+      font-size: 15px;
+      text-align: center;
+      }
+
+  .write-header-3{
+      font-size: 8px;
+      text-align: center;
+      }
   }
 
 
-   .foto {
-    width:25%;
-    height: 25%;
-    position: relative;
-    float: right;
-    padding-right:2.5em;
-    padding-top: 2.5em;
-    z-index: 1;
-  }
 
-  .write-header{
 
-    color: $header2;
 
-    display: flex;
-    float: left;
-    position: relative;
-    padding-top:10%;
-    padding-left:7%;
-    padding-bottom: 6%;
-    font-size: auto;
-    z-index: 1;
-    }
 
     //About;
 
     div.bio{
-      display:block;
+
     }
 
 }
@@ -196,34 +181,32 @@ div.bio{
 @media only screen and(min-width:501px)and(max-width:900px){
 
     //HEADER;
-  .foto {
-      padding-right:4em;
-      padding-top: 4em;
-      }
 
-  .write-header{
-        padding-top:40%;
-        padding-left:25%;
-        width: 70%;
-        height: 50%;
 
-    .write-header-1{
-          font-size: 40px;
-          text-align: center;
 
-        }
-        .write-header-2{
-          font-size: 20px;
-          text-align: center;
-        }
+    div.write-header{
+      width: 100%;
+      min-height: 50vh;
+      padding-top:10%;
+      padding-left:7%;
+      font-size: auto;
+      color: $header2;
 
-        .write-header-3{
-          font-size: 15px;
-          text-align: center;
-        }
+      .write-header-1{
+            font-size: 40px;
+            text-align: center;
 
-        }
+          }
+          .write-header-2{
+            font-size: 20px;
+            text-align: center;
+          }
 
+          .write-header-3{
+            font-size: 15px;
+            text-align: center;
+          }
+  }
 
 }
 
@@ -231,30 +214,27 @@ div.bio{
 @media only screen and(min-width:901px){
 
       //HEADER;
-  .foto {
-    padding-right:9em;
-    padding-top: 9em;
-    }
+    div  .write-header{
+      width: 100%;
+      min-height: 90vh;
+      padding-top:10%;
+      padding-left:7%;
+      font-size: auto;
+      color: $header2;
 
-  .write-header{
-    padding-top:40%;
-    padding-left:25%;
-    width: 70%;
-    height: 50%;
 
-      .write-header-1{
-        font-size: 100px;
-        text-align: center;
+          .write-header-1{
+            font-size: 100px;
+            text-align: center;
+            }
+          .write-header-2{
+            font-size: 50px;
+            text-align: center;
+            }
+
+          .write-header-3{
+            font-size: 30px;
+            text-align: center;
+            }
         }
-      .write-header-2{
-        font-size: 50px;
-        text-align: center;
-        }
-
-      .write-header-3{
-        font-size: 30px;
-        text-align: center;
-        }
-    }
-
 }

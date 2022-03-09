@@ -62,22 +62,12 @@ nav .menu-btn i {
 #click {
   display: none; }
 
-.write-header-1 {
-  font-size: 30px;
-  text-align: center; }
+div.bg-img {
+  background-image: url(/img/header-gray-1.png);
+  background-size: cover;
+  background-position: center; }
 
-.write-header-2 {
-  font-size: 15px;
-  text-align: center; }
-
-.write-header-3 {
-  font-size: 8px;
-  text-align: center; }
-
-div.bio {
-  display: block; }
-
-@media only screen and (max-width: 500px) {
+@media only screen and (max-width: 400px) {
   nav .menu-btn i {
     display: block; }
 
@@ -109,72 +99,56 @@ div.bio {
   nav ul li a:hover,
   nav ul li a.active {
     color: #2f4f4f;
-    background-color: none; } }
-.header {
-  display: block;
-  position: absolute; }
-  .header .background img {
+    background-color: none; }
+
+  div.write-header {
     width: 100%;
-    display: flex;
-    position: absolute;
-    z-index: 0; }
-  .header .foto {
-    width: 25%;
-    height: 25%;
-    position: relative;
-    float: right;
-    padding-right: 2.5em;
-    padding-top: 2.5em;
-    z-index: 1; }
-  .header .write-header {
-    color: #2f4f4f;
-    display: flex;
-    float: left;
-    position: relative;
+    min-height: 30vh;
     padding-top: 10%;
     padding-left: 7%;
-    padding-bottom: 6%;
     font-size: auto;
-    z-index: 1; }
-  .header div.bio {
-    display: block; }
-
-@media only screen and (min-width: 501px) and (max-width: 900px) {
-  .foto {
-    padding-right: 4em;
-    padding-top: 4em; }
-
-  .write-header {
-    padding-top: 40%;
-    padding-left: 25%;
-    width: 70%;
-    height: 50%; }
-    .write-header .write-header-1 {
+    color: #2f4f4f; }
+    div.write-header .write-header-1 {
+      font-size: 30px;
+      text-align: center; }
+    div.write-header .write-header-2 {
+      font-size: 15px;
+      text-align: center; }
+    div.write-header .write-header-3 {
+      font-size: 8px;
+      text-align: center; } }
+@media only screen and (min-width: 401px) and (max-width: 900px) {
+  div.write-header {
+    width: 100%;
+    min-height: 50vh;
+    padding-top: 10%;
+    padding-left: 7%;
+    font-size: auto;
+    color: #2f4f4f; }
+    div.write-header .write-header-1 {
       font-size: 40px;
       text-align: center; }
-    .write-header .write-header-2 {
+    div.write-header .write-header-2 {
       font-size: 20px;
       text-align: center; }
-    .write-header .write-header-3 {
+    div.write-header .write-header-3 {
       font-size: 15px;
       text-align: center; } }
 @media only screen and (min-width: 901px) {
-  .foto {
-    padding-right: 9em;
-    padding-top: 9em; }
-
-  .write-header {
-    padding-top: 40%;
-    padding-left: 25%;
-    width: 70%;
-    height: 50%; }
-    .write-header .write-header-1 {
+  div .write-header {
+    width: 100%;
+    min-height: 90vh;
+    padding-top: 10%;
+    padding-left: 7%;
+    font-size: auto;
+    color: #2f4f4f; }
+    div .write-header .write-header-1 {
       font-size: 100px;
       text-align: center; }
-    .write-header .write-header-2 {
+    div .write-header .write-header-2 {
       font-size: 50px;
       text-align: center; }
-    .write-header .write-header-3 {
+    div .write-header .write-header-3 {
       font-size: 30px;
       text-align: center; } }
 
