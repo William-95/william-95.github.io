@@ -80,7 +80,7 @@ $header2:#2f4f4f ;  //darkslategrey;
 //HEADER;
       div.bg-img{
 
-          background-image: url(/img/header-gray-1.png);
+          background-image: url(/img/header-gray-2.png);
           background-size:cover;
           background-position: center;
 
@@ -89,10 +89,14 @@ $header2:#2f4f4f ;  //darkslategrey;
 
 
 //ABOUT
+div.bio{
+    background:$header1;
+    margin:10%;
+    
+    font-size:auto;
 
-  div.bio{
+}
 
-  }
 
 
   //MOBILE;
@@ -137,9 +141,10 @@ $header2:#2f4f4f ;  //darkslategrey;
 
         //Header!!
 
+
         div.write-header{
         width: 100%;
-        min-height: 25vh;
+        min-height: 20vh;
         padding-top:10%;
         padding-left:7%;
         font-size: auto;
@@ -163,9 +168,7 @@ $header2:#2f4f4f ;  //darkslategrey;
 
       //About;
 
-      div.bio{
-      color: $primary;
-      }
+
   }
 
 
@@ -186,17 +189,17 @@ $header2:#2f4f4f ;  //darkslategrey;
       color: $header2;
 
       .write-header-1{
-            font-size: 40px;
+            font-size: 45px;
             text-align: center;
 
           }
           .write-header-2{
-            font-size: 20px;
+            font-size: 25px;
             text-align: center;
           }
 
           .write-header-3{
-            font-size: 15px;
+            font-size: 18px;
             text-align: center;
           }
   }
