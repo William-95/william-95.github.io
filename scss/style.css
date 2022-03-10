@@ -103,7 +103,7 @@ div.bg-img {
 
   div.write-header {
     width: 100%;
-    min-height: 30vh;
+    min-height: 25vh;
     padding-top: 10%;
     padding-left: 7%;
     font-size: auto;
@@ -116,7 +116,10 @@ div.bg-img {
       text-align: center; }
     div.write-header .write-header-3 {
       font-size: 8px;
-      text-align: center; } }
+      text-align: center; }
+
+  div.bio {
+    color: #d3d3d3; } }
 @media only screen and (min-width: 401px) and (max-width: 900px) {
   div.write-header {
     width: 100%;

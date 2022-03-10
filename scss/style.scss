@@ -83,6 +83,8 @@ $header2:#2f4f4f ;  //darkslategrey;
           background-image: url(/img/header-gray-1.png);
           background-size:cover;
           background-position: center;
+
+
            }
 
 
@@ -93,79 +95,80 @@ $header2:#2f4f4f ;  //darkslategrey;
   }
 
 
-      //MOBILE;
-@media only screen and(max-width: 400px){
+  //MOBILE;
+  @media only screen and(max-width:400px){
 
-  nav .menu-btn i{
-    display:block;
-    }
-
-
-    #click:checked ~ .menu-btn i:before{
-      content: "\f00d"; //appare croce nel menu piccolo;
+        nav .menu-btn i{
+        display:block;
         }
-    nav ul{ //passaggio a menu piccolo decorazione;
-      position: fixed;
-      top: 60px;
-      left: -100%;
-      background-color: $header1;
-      height: 100vh;
-      width: 100%;
-      display:block;
-      text-align: center;
-      transition: all 0.3s ease;
-      z-index: 99999;
-      }
-    #click:checked ~ ul{
-        left:0%;
+
+
+        #click:checked ~ .menu-btn i:before{
+        content: "\f00d"; //appare croce nel menu piccolo;
+          }
+        nav ul{ //passaggio a menu piccolo decorazione;
+        position: fixed;
+        top: 60px;
+        left: -100%;
+        background-color: $header1;
+        height: 100vh;
+        width: 100%;
+        display:block;
+        text-align: center;
+        transition: all 0.3s ease;
+        z-index: 99999;
         }
-    nav ul li{
-      margin: 40px 0px;
-      }
-    nav ul li a{
-      font-size: 20px;
-      display:block;
-      }
-    nav ul li a:hover,
-    nav ul li a.active {
-    color: $header2;
-    background-color: none;
-    }
-
-
-//Header!!
-
-    div.write-header{
-      width: 100%;
-      min-height: 30vh;
-      padding-top:10%;
-      padding-left:7%;
-      font-size: auto;
-      color: $header2;
-
-
-      .write-header-1{
-          font-size: 30px;
-          text-align: center;
+        #click:checked ~ ul{
+          left:0%;
           }
-      .write-header-2{
-          font-size: 15px;
-          text-align: center;
-          }
+        nav ul li{
+        margin: 40px 0px;
+        }
+        nav ul li a{
+        font-size: 20px;
+        display:block;
+        }
+        nav ul li a:hover,
+        nav ul li a.active {
+        color: $header2;
+        background-color: none;
+        }
 
-      .write-header-3{
-          font-size: 8px;
-          text-align: center;
-          }
+
+        //Header!!
+
+        div.write-header{
+        width: 100%;
+        min-height: 25vh;
+        padding-top:10%;
+        padding-left:7%;
+        font-size: auto;
+        color: $header2;
+
+
+        .write-header-1{
+            font-size: 30px;
+            text-align: center;
+            }
+        .write-header-2{
+            font-size: 15px;
+            text-align: center;
+            }
+
+            .write-header-3{
+                font-size: 8px;
+                text-align: center;
+                }
+            }
+
+      //About;
+
+      div.bio{
+      color: $primary;
       }
+  }
 
-    //About;
 
-    div.bio{
-
-    }
-
-}
 
 
 
