@@ -84,6 +84,55 @@ div.bio {
     margin-bottom: 6%;
     font-size: auto; }
 
+div.work {
+  color: #2f4f4f;
+  background-color: #d3d3d3;
+  margin: 10%;
+  display: flex;
+  border: 5px solid darkgrey;
+  border-radius: 15px 60px;
+  flex-direction: row; }
+  div.work h2 {
+    text-align: center;
+    margin: 5%; }
+  div.work .work-html {
+    margin: 3%;
+    padding: 3%;
+    border-right: 1px solid darkslategrey; }
+    div.work .work-html i {
+      display: flex;
+      justify-content: center;
+      font-size: 48px;
+      color: blue; }
+  div.work .work-css {
+    margin: 3%;
+    padding-right: 3%;
+    padding-top: 3%;
+    border-right: 1px solid darkslategrey; }
+    div.work .work-css i {
+      display: flex;
+      justify-content: center;
+      font-size: 48px;
+      color: red; }
+  div.work .work-js {
+    margin: 3%;
+    padding-right: 3%;
+    padding-top: 3%;
+    border-right: 1px solid darkslategrey; }
+    div.work .work-js i {
+      display: flex;
+      justify-content: center;
+      font-size: 48px;
+      color: #fde910; }
+  div.work .work-sass {
+    margin: 3%;
+    padding-top: 3%; }
+    div.work .work-sass i {
+      display: flex;
+      justify-content: center;
+      font-size: 48px;
+      color: fuchsia; }
+
 @media only screen and (max-width: 440px) {
   nav .menu-btn i {
     display: block; }
@@ -136,7 +185,22 @@ div.bio {
       text-align: center; }
 
   div.bio {
-    font-size: 100%; } }
+    font-size: 100%; }
+
+  div.work {
+    flex-direction: column; }
+    div.work .work-html {
+      padding: 3%;
+      border-right: none; }
+    div.work .work-css {
+      padding: 3%;
+      border-right: none; }
+    div.work .work-js {
+      padding: 3%;
+      border-right: none; }
+    div.work .work-sass {
+      padding: 3%;
+      border-right: none; } }
 @media only screen and (min-width: 441px) and (max-width: 900px) {
   div.write-header {
     width: 100%;

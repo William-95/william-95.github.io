@@ -100,9 +100,9 @@ div.bio{
     font-size:200%;
     border: 5px solid darkgrey;
     border-radius: 15px 60px;
+
       .bio-1{
         margin:6%;
-
       }
 
       h2{
@@ -110,7 +110,82 @@ div.bio{
         margin-bottom: 6%;
         font-size: auto;
       }
-}
+    }
+
+    //Work!!
+
+    div.work{
+      color:$header2;
+      background-color:$primary;
+      margin:10%;
+      display:flex;
+      border: 5px solid darkgrey;
+      border-radius: 15px 60px;
+      flex-direction: row;
+
+
+
+
+        h2{
+          text-align: center;
+          margin:5%;
+          }
+
+            .work-html{
+              margin:3%;
+              padding:3%;
+              border-right: 1px solid darkslategrey;
+
+                i {
+                  display: flex;
+                  justify-content: center;
+                  font-size:48px;
+                  color:blue;
+                }
+            }
+
+            .work-css{
+              margin:3%;
+              padding-right:3%;
+              padding-top:3%;
+              border-right: 1px solid darkslategrey;
+
+              i {
+                display: flex;
+                justify-content: center;
+                font-size:48px;
+                color:red;
+              }
+            }
+
+            .work-js{
+              margin:3%;
+              padding-right:3%;
+              padding-top: 3%;
+              border-right: 1px solid darkslategrey;
+
+              i {
+                display: flex;
+                justify-content: center;
+                font-size:48px;
+                color:#fde910;
+                }
+            }
+
+            .work-sass{
+              margin:3%;
+              padding-top: 3%;
+
+              i {
+                display: flex;
+                justify-content: center;
+                font-size:48px;
+                color:fuchsia;
+              }
+            }
+
+
+    }
 
 
 
@@ -185,6 +260,28 @@ div.bio{
 
       div.bio{
         font-size: 100%;
+      }
+
+      //work
+
+      div.work{
+        flex-direction: column;
+        .work-html{
+          padding:3%;
+          border-right: none;
+        }
+        .work-css{
+          padding:3%;
+          border-right: none;
+        }
+        .work-js{
+          padding:3%;
+          border-right: none;
+        }
+        .work-sass{
+          padding:3%;
+          border-right: none;
+        }
       }
 
   }
