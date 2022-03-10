@@ -65,14 +65,26 @@ nav .menu-btn i {
 div.bg-img {
   background-image: url(/img/header-gray-2.png);
   background-size: cover;
-  background-position: center; }
+  background-position: center;
+  border-bottom: 10px solid gray; }
 
 div.bio {
-  background: #a9a9a9;
+  color: #2f4f4f;
+  background-color: #d3d3d3;
   margin: 10%;
-  font-size: auto; }
+  display: flex;
+  align-items: center;
+  font-size: 200%;
+  border: 5px solid darkgrey;
+  border-radius: 15px 60px; }
+  div.bio .bio-1 {
+    margin: 6%; }
+  div.bio h2 {
+    text-align: center;
+    margin-bottom: 6%;
+    font-size: auto; }
 
-@media only screen and (max-width: 400px) {
+@media only screen and (max-width: 440px) {
   nav .menu-btn i {
     display: block; }
 
@@ -121,8 +133,11 @@ div.bio {
       text-align: center; }
     div.write-header .write-header-3 {
       font-size: 8px;
-      text-align: center; } }
-@media only screen and (min-width: 401px) and (max-width: 900px) {
+      text-align: center; }
+
+  div.bio {
+    font-size: 100%; } }
+@media only screen and (min-width: 441px) and (max-width: 900px) {
   div.write-header {
     width: 100%;
     min-height: 50vh;
@@ -138,7 +153,10 @@ div.bio {
       text-align: center; }
     div.write-header .write-header-3 {
       font-size: 18px;
-      text-align: center; } }
+      text-align: center; }
+
+  div.bio {
+    font-size: 150%; } }
 @media only screen and (min-width: 901px) {
   div .write-header {
     width: 100%;

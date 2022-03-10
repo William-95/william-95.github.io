@@ -10,6 +10,7 @@ $header2:#2f4f4f ;  //darkslategrey;
   margin:0;
   padding:0;
   box-sizing: border-box;
+
   }
 
 
@@ -83,24 +84,38 @@ $header2:#2f4f4f ;  //darkslategrey;
           background-image: url(/img/header-gray-2.png);
           background-size:cover;
           background-position: center;
-
+          border-bottom: 10px solid gray;
 
            }
 
 
+
 //ABOUT
 div.bio{
-    background:$header1;
+    color:$header2;
+    background-color:$primary;
     margin:10%;
-    
-    font-size:auto;
+    display: flex;
+    align-items:center;
+    font-size:200%;
+    border: 5px solid darkgrey;
+    border-radius: 15px 60px;
+      .bio-1{
+        margin:6%;
 
+      }
+
+      h2{
+        text-align: center;
+        margin-bottom: 6%;
+        font-size: auto;
+      }
 }
 
 
 
   //MOBILE;
-  @media only screen and(max-width:400px){
+  @media only screen and(max-width:440px){
 
         nav .menu-btn i{
         display:block;
@@ -168,6 +183,9 @@ div.bio{
 
       //About;
 
+      div.bio{
+        font-size: 100%;
+      }
 
   }
 
@@ -176,7 +194,7 @@ div.bio{
 
 
 //TABLET;
-@media only screen and(min-width:401px)and(max-width:900px){
+@media only screen and(min-width:441px)and(max-width:900px){
 
     //HEADER;
 
@@ -202,7 +220,11 @@ div.bio{
             font-size: 18px;
             text-align: center;
           }
-  }
+        }
+
+    div.bio{
+        font-size: 150%;
+        }
 
 }
 //DESKTOP!!
