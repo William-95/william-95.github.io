@@ -13,7 +13,7 @@ nav {
 
 nav .logo {
   font-size: 33px;
-  color: #2f4f4f;
+  color: #000080;
   font-weight: 600px; }
 
 nav ul {
@@ -26,7 +26,7 @@ nav ul li {
 nav ul li a {
   text-decoration: none;
   position: relative;
-  color: #2f4f4f;
+  color: #000080;
   font-size: 18px;
   padding: 5px 0;
   text-transform: uppercase; }
@@ -38,7 +38,7 @@ nav ul li a:before {
   bottom: 0;
   height: 3px;
   width: 100%;
-  background-color: #2f4f4f;
+  background-color: #000080;
   transform: scaleX(0);
   transform-origin: right;
   transition: transform .4s linear; }
@@ -48,13 +48,13 @@ nav ul li a:hover:before {
   transform-origin: left; }
 
 nav ul li a:active:before {
-  color: #a9a9a9; }
+  color: #000080; }
 
 nav ul li a.active {
-  color: #2f4f4f; }
+  color: #000000; }
 
 nav .menu-btn i {
-  color: #2f4f4f;
+  color: #000080;
   font-size: 22px;
   cursor: pointer;
   display: none; }
@@ -62,19 +62,53 @@ nav .menu-btn i {
 #click {
   display: none; }
 
-div.bg-img {
-  background-image: url(/img/header-gray-2.png);
-  background-size: cover;
-  background-position: center;
-  border-bottom: 10px solid gray; }
+section {
+  position: relative;
+  width: 100%;
+  height: 80vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden; }
+  section .content {
+    position: relative;
+    z-index: 1;
+    margin: 0 auto;
+    max-width: 900px;
+    text-align: left; }
+    section .content h2 {
+      margin: 0;
+      padding: 0;
+      color: #fff;
+      font-size: 5.5em; }
+    section .content p {
+      color: #f5f5f5;
+      font-size: 2.5em; }
+
+section:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(45deg, #000080, #B0E0E6);
+  border-radius: 0 0 50% 50%/0 0 100% 100%;
+  transform: scaleX(1.5); }
+
+.foto-me {
+  z-index: 2;
+  width: 15%;
+  margin-right: 15%;
+  border-radius: 40%; }
 
 div.bio {
-  color: #2f4f4f;
+  color: #191970;
   background-color: #d3d3d3;
   margin: 10%;
   display: flex;
   align-items: center;
-  font-size: 200%;
+  font-size: 150%;
   border: 5px solid darkgrey;
   border-radius: 15px 60px; }
   div.bio .bio-1 {
@@ -84,18 +118,26 @@ div.bio {
     margin-bottom: 6%;
     font-size: auto; }
 
+h1.title-work {
+  margin: 15% 15% 0 15%;
+  padding: 2%;
+  text-align: center;
+  border-top: 2px solid darkgrey; }
+
 div.work {
-  color: #2f4f4f;
+  color: #191970;
   background-color: #d3d3d3;
-  margin: 10%;
+  margin: 0 10%;
   display: flex;
   border: 5px solid darkgrey;
+  font-size: auto;
   border-radius: 15px 60px;
-  flex-direction: row; }
+  flex-wrap: wrap; }
   div.work h2 {
     text-align: center;
     margin: 5%; }
   div.work .work-html {
+    width: 19%;
     margin: 3%;
     padding: 3%;
     border-right: 1px solid darkslategrey; }
@@ -105,6 +147,7 @@ div.work {
       font-size: 48px;
       color: blue; }
   div.work .work-css {
+    width: 19%;
     margin: 3%;
     padding-right: 3%;
     padding-top: 3%;
@@ -115,6 +158,7 @@ div.work {
       font-size: 48px;
       color: red; }
   div.work .work-js {
+    width: 19%;
     margin: 3%;
     padding-right: 3%;
     padding-top: 3%;
@@ -125,6 +169,7 @@ div.work {
       font-size: 48px;
       color: #fde910; }
   div.work .work-sass {
+    width: 19%;
     margin: 3%;
     padding-top: 3%; }
     div.work .work-sass i {
@@ -144,7 +189,7 @@ div.work {
     position: fixed;
     top: 60px;
     left: -100%;
-    background-color: #a9a9a9;
+    background-color: #f5f5f5;
     height: 100vh;
     width: 100%;
     display: block;
@@ -164,79 +209,67 @@ div.work {
 
   nav ul li a:hover,
   nav ul li a.active {
-    color: #2f4f4f;
+    color: #000000;
     background-color: none; }
 
-  div.write-header {
-    width: 100%;
-    min-height: 20vh;
-    padding-top: 10%;
-    padding-left: 7%;
-    font-size: auto;
-    color: #2f4f4f; }
-    div.write-header .write-header-1 {
-      font-size: 30px;
-      text-align: center; }
-    div.write-header .write-header-2 {
-      font-size: 15px;
-      text-align: center; }
-    div.write-header .write-header-3 {
-      font-size: 8px;
-      text-align: center; }
+  section {
+    font-size: 50%;
+    height: 30vh; }
+
+  .foto-me {
+    width: 30%; }
 
   div.bio {
     font-size: 100%; }
 
   div.work {
+    flex-wrap: nowrap;
     flex-direction: column; }
     div.work .work-html {
+      width: 100%;
+      padding: 10%;
+      border-right: none; }
+    div.work .work-css {
+      width: 100%;
+      padding: 10%;
+      border-right: none; }
+    div.work .work-js {
+      width: 100%;
+      padding: 10%;
+      border-right: none; }
+    div.work .work-sass {
+      width: 100%;
+      padding: 10%;
+      border-right: none; } }
+@media only screen and (min-width: 441px) and (max-width: 900px) {
+  section {
+    height: 50vh;
+    font-size: 75%; }
+
+  .foto-me {
+    width: 30%; }
+
+  div.bio {
+    font-size: 150%; }
+
+  div.work {
+    flex-wrap: wrap;
+    flex-direction: row; }
+    div.work .work-html {
+      width: 40%;
       padding: 3%;
       border-right: none; }
     div.work .work-css {
+      width: 40%;
       padding: 3%;
       border-right: none; }
     div.work .work-js {
+      width: 40%;
       padding: 3%;
       border-right: none; }
     div.work .work-sass {
+      width: 40%;
       padding: 3%;
       border-right: none; } }
-@media only screen and (min-width: 441px) and (max-width: 900px) {
-  div.write-header {
-    width: 100%;
-    min-height: 50vh;
-    padding-top: 10%;
-    padding-left: 7%;
-    font-size: auto;
-    color: #2f4f4f; }
-    div.write-header .write-header-1 {
-      font-size: 45px;
-      text-align: center; }
-    div.write-header .write-header-2 {
-      font-size: 25px;
-      text-align: center; }
-    div.write-header .write-header-3 {
-      font-size: 18px;
-      text-align: center; }
-
-  div.bio {
-    font-size: 150%; } }
-@media only screen and (min-width: 901px) {
-  div .write-header {
-    width: 100%;
-    min-height: 90vh;
-    padding-top: 10%;
-    padding-left: 7%;
-    font-size: auto;
-    color: #2f4f4f; }
-    div .write-header .write-header-1 {
-      font-size: 100px;
-      text-align: center; }
-    div .write-header .write-header-2 {
-      font-size: 50px;
-      text-align: center; }
-    div .write-header .write-header-3 {
-      font-size: 30px;
-      text-align: center; } }
 
 /*# sourceMappingURL=style.css.map */

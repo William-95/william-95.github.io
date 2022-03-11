@@ -4,7 +4,7 @@
 
     <meta charset="utf-8">
     <title>TEST</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <link rel="stylesheet" href="./scss/style.css">
 
@@ -33,32 +33,89 @@
 
 <!--header-->
 
-
-
-
-
     <div class="bg-img">
         <div class="write-header">
           <p><span class="write-header-1">Ciao,</span><br>
           <span class="write-header-2">Io sono <b>William Verga</b></span><br>
           <span class="write-header-3">e sono un Web Developer.</span></p>
-
         </div>
-
       </div>
 
-
         <!--About-->
+
         <div class="bio">
-          ciao
+            <div class="bio-1">
+
+                <h2>About</h2>
+                <p>Il mio primo colpo di fulmine fu all'età di 12 anni con la prima
+                frequentazione di un corso HTML, un interesse che è cresciuto
+                esponenzialmente nel corso del tempo.<br>
+                Con il passare degli anni e la voglia di ricerca di un'indipendenza
+                economica ho accantonato questo mondo pur mantenendo viva la passione.<br>
+                Ad oggi, con più maturità e consapevolezza, so che ho le capacità e
+                la motivazione per far diventare la mia passione il mio lavoro.<br>
+                Ho 27 anni, intuitivo, perfezionista ed estroverso.</p>
+          </div>
         </div>
 
 
 <!--Work-->
 
+
+    <h1 class="title-work">Grazie a Start2Impact ho appreso:</h1>
+    <div class="work">
+
+
+
+
+          <div class="work-html">
+            <i class='fab fa-html5'></i>
+            <h2>HTML5</h2>
+            <p>L’ultima versione di HTML, il linguaggio di markup
+            attualmente più diffuso sul web, che spesso si interseca
+            con JavaScript. Utilizzato per aggiungere significato al
+            contenuto grezzo.</p>
+          </div>
+
+          <div class="work-css">
+            <i class='fab fa-css3-alt'></i>
+            <h2>CSS3</h2>
+              <p>La nuova versione di CSS (Cascading Style Sheets) chiamato in
+              italiano (Fogli di Stile a Cascata), è un linguaggio di
+              programmazione web utilizzato per descrivere l’aspetto e la
+              formattazione di un sito web al browser lato client.
+              CSS3 permette agli sviluppatori di creare pagine web ricche
+              di contenuti con requisiti di codice relativamente leggeri.</p>
+          </div>
+
+          <div class="work-js">
+            <i class='fab fa-js-square'></i>
+            <h2>JS</h2>
+              <p>Un linguaggio utilizzato per rendere interattive le pagine web.
+              JavaScript, insieme ad HTML e CSS, è una delle tecnologie
+              principali della programmazione web front end.
+              Infatti JavaScript gestisce il comportamento degli
+              elementi dinamici di un sito web.</p>
+          </div>
+
+          <div class="work-sass">
+            <i class='fab fa-sass'></i>
+            <h2>SASS</h2>
+              <p>Preprocessore CSS che permette di definire fogli di stile
+              con una forma più semplice, completa e potente, generando
+              fogli di stile ottimizzati ed aggregando le strutture
+              definite anche in modo complesso. SASS si distingue dagli
+              altri preprocessori CSS per completezza, stabilità,
+              estensibilità ed integrazione con gli altri componenti
+              tipici di uno stack Web moderno.</p>
+          </div>
+
+    </div>
 <!--Footer-->
 
-
+    <footer>
+      ciao
+    </footer>
 
 
 

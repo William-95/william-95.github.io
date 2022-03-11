@@ -2,18 +2,12 @@ prima versione
 
 
 
-$primary: 	#d3d3d3 ;  //light-gray;
-$secondary: #808080;  //grey;
-$header1:#a9a9a9;  //darkgrey;
-$header2:#2f4f4f ;  //darkslategrey;
-
-
-
 //start;
 *{
   margin:0;
   padding:0;
   box-sizing: border-box;
+
   }
 
 
@@ -81,108 +75,248 @@ $header2:#2f4f4f ;  //darkslategrey;
       display: none;
       }
 
-
+//HEADER;
       div.bg-img{
 
           background-image: url(/img/header-gray-2.png);
           background-size:cover;
           background-position: center;
+          border-bottom: 10px solid gray;
+
            }
 
-         div.bio{
+
+
+//ABOUT
+div.bio{
+    color:$header2;
+    background-color:$primary;
+    margin:10%;
+    display: flex;
+    align-items:center;
+    font-size:200%;
+    border: 5px solid darkgrey;
+    border-radius: 15px 60px;
+
+      .bio-1{
+        margin:6%;
+      }
+
+      h2{
+        text-align: center;
+        margin-bottom: 6%;
+        font-size: auto;
+      }
+    }
+
+    //Work!!
+    h1.title-work{
+      margin:15% 15% 0 15%;
+      padding:2%;
+      text-align:center;
+      border-top: 2px solid darkgrey;
+
+    }
+
+    div.work{
+      color:$header2;
+      background-color:$primary;
+      margin:0 10%;
+      display:flex;
+      border: 5px solid darkgrey;
+      font-size: auto;
+      border-radius: 15px 60px;
+      flex-wrap: wrap;
+
+
+
+
+
+        h2{
+          text-align: center;
+          margin:5%;
+          }
+
+            .work-html{
+
+              width: 19%;
+              margin:3%;
+              padding:3%;
+              border-right: 1px solid darkslategrey;
+
+
+                i {
+                  display: flex;
+                  justify-content: center;
+                  font-size:48px;
+                  color:blue;
+                }
+            }
+
+            .work-css{
+
+              width: 19%;
+              margin:3%;
+              padding-right:3%;
+              padding-top:3%;
+              border-right: 1px solid darkslategrey;
+
+              i {
+                display: flex;
+                justify-content: center;
+                font-size:48px;
+                color:red;
+              }
+            }
+
+            .work-js{
+              width: 19%;
+              margin:3%;
+              padding-right:3%;
+              padding-top: 3%;
+              border-right: 1px solid darkslategrey;
+
+              i {
+                display: flex;
+                justify-content: center;
+                font-size:48px;
+                color:#fde910;
+                }
+            }
+
+            .work-sass{
+              width: 19%;
+              margin:3%;
+              padding-top: 3%;
+
+              i {
+                display: flex;
+                justify-content: center;
+                font-size:48px;
+                color:fuchsia;
+              }
+            }
+
+
+    }
+
+
+
+  //MOBILE;
+  @media only screen and(max-width:440px){
+
+        nav .menu-btn i{
+        display:block;
+        }
+
+
+        #click:checked ~ .menu-btn i:before{
+        content: "\f00d"; //appare croce nel menu piccolo;
+          }
+        nav ul{ //passaggio a menu piccolo decorazione;
+        position: fixed;
+        top: 60px;
+        left: -100%;
+        background-color: $header1;
+        height: 100vh;
+        width: 100%;
+        display:block;
+        text-align: center;
+        transition: all 0.3s ease;
+        z-index: 99999;
+        }
+        #click:checked ~ ul{
+          left:0%;
+          }
+        nav ul li{
+        margin: 40px 0px;
+        }
+        nav ul li a{
+        font-size: 20px;
+        display:block;
+        }
+        nav ul li a:hover,
+        nav ul li a.active {
+        color: $header2;
+        background-color: none;
+        }
+
+
+        //Header!! mobile
+
+
+        div.write-header{
+        width: 100%;
+        min-height: 20vh;
+        padding-top:10%;
+        padding-left:7%;
+        font-size: auto;
+        color: $header2;
+
+
+        .write-header-1{
+            font-size: 30px;
+            text-align: center;
+            }
+        .write-header-2{
+            font-size: 15px;
+            text-align: center;
+            }
+
+            .write-header-3{
+                font-size: 8px;
+                text-align: center;
+                }
+            }
+
+      //About;mobile
+
+      div.bio{
+        font-size: 100%;
+      }
+
+      //work;mobile
+
+      div.work{
+        flex-wrap: nowrap;
+        flex-direction: column;
+
+        .work-html{
+          width: 100%;
+          padding:10%;
+          border-right: none;
+        }
+
+        .work-css{
+          width: 100%;
+          padding:10%;
+          border-right: none;
+        }
+
+        .work-js{
+          width: 100%;
+          padding:10%;
+          border-right: none;
+        }
+
+        .work-sass{
+          width: 100%;
+          padding:10%;
+          border-right: none;
+        }
+
+      }
 
   }
 
 
-      //MOBILE;
-@media only screen and(max-width: 500px){
-
-  nav .menu-btn i{
-    display:block;
-    }
-
-    #click:checked ~ .menu-btn i:before{
-      content: "\f00d"; //appare croce nel menu piccolo;
-        }
-    nav ul{ //passaggio a menu piccolo decorazione;
-      position: fixed;
-      top: 60px;
-      left: -100%;
-      background-color: $header1;
-      height: 100vh;
-      width: 100%;
-      display:block;
-      text-align: center;
-      transition: all 0.3s ease;
-      z-index: 99999;
-      }
-    #click:checked ~ ul{
-        left:0%;
-        }
-    nav ul li{
-      margin: 40px 0px;
-      }
-    nav ul li a{
-      font-size: 20px;
-      display:block;
-      }
-    nav ul li a:hover,
-    nav ul li a.active {
-    color: $header2;
-    background-color: none;
-    }
-
-
-//Header!!
-
-
-
-
-div.write-header{
-  width: 100%;
-  min-height: 30vh;
-  padding-top:10%;
-  padding-left:7%;
-  font-size: auto;
-  color: $header2;
-
-
-  .write-header-1{
-      font-size: 30px;
-      text-align: center;
-      }
-  .write-header-2{
-      font-size: 15px;
-      text-align: center;
-      }
-
-  .write-header-3{
-      font-size: 8px;
-      text-align: center;
-      }
-  }
-
-
-
-
-
-
-    //About;
-
-    div.bio{
-
-    }
-
-}
 
 
 
 //TABLET;
-@media only screen and(min-width:501px)and(max-width:900px){
+@media only screen and(min-width:441px)and(max-width:900px){
 
-    //HEADER;
-
-
+    //HEADER;tablet
 
     div.write-header{
       width: 100%;
@@ -193,48 +327,82 @@ div.write-header{
       color: $header2;
 
       .write-header-1{
-            font-size: 40px;
+            font-size: 45px;
             text-align: center;
 
           }
           .write-header-2{
-            font-size: 20px;
+            font-size: 25px;
             text-align: center;
           }
 
           .write-header-3{
-            font-size: 15px;
+            font-size: 18px;
             text-align: center;
           }
+        }
+
+//About;tablet
+
+    div.bio{
+        font-size: 150%;
   }
 
-}
+//work;tablet
 
+    div.work{
+      flex-wrap: wrap;
+      flex-direction:row;
+      .work-html{
+        width: 40%;
+        padding:3%;
+        border-right: none;
+      }
+      .work-css{
+
+        width: 40%;
+        padding:3%;
+        border-right: none;
+      }
+      .work-js{
+        width: 40%;
+        padding:3%;
+        border-right: none;
+      }
+      .work-sass{
+        width: 40%;
+        padding:3%;
+        border-right: none;
+      }
+    }
+}
 //DESKTOP!!
 @media only screen and(min-width:901px){
 
-      //HEADER;
-    div  .write-header{
-      width: 100%;
-      min-height: 90vh;
-      padding-top:10%;
-      padding-left:7%;
-      font-size: auto;
-      color: $header2;
+          //HEADER;desktop
+
+          div  .write-header{
+            width: 100%;
+            min-height: 90vh;
+            padding-top:10%;
+            padding-left:7%;
+            font-size: auto;
+            color: $header2;
 
 
-          .write-header-1{
-            font-size: 100px;
-            text-align: center;
-            }
-          .write-header-2{
-            font-size: 50px;
-            text-align: center;
-            }
+                .write-header-1{
+                  font-size: 100px;
+                  text-align: center;
+                  }
+                .write-header-2{
+                  font-size: 50px;
+                  text-align: center;
+                  }
 
-          .write-header-3{
-            font-size: 30px;
-            text-align: center;
-            }
-        }
+                .write-header-3{
+                  font-size: 30px;
+                  text-align: center;
+                  }
+              }
+
 }

@@ -1,8 +1,8 @@
 $primary: 	#d3d3d3 ;  //light-gray;
-$secondary: #808080;  //grey;
-$header1:#a9a9a9;  //darkgrey;
-$header2:#2f4f4f ;  //darkslategrey;
-
+$secondary:	#000080 ;  //navy blue;
+$white: #f5f5f5; //white smoke;
+$black:#000000; // black;
+$write:#191970;//midnightblue;
 
 
 //start;
@@ -10,7 +10,6 @@ $header2:#2f4f4f ;  //darkslategrey;
   margin:0;
   padding:0;
   box-sizing: border-box;
-
   }
 
 
@@ -18,7 +17,7 @@ $header2:#2f4f4f ;  //darkslategrey;
   //NAV BAR;
   nav{
     height: 60px;
-    background-color: #f5f5f5;
+    background-color: $white;
     display:flex;
     align-items: center;
     justify-content: space-between;
@@ -26,8 +25,9 @@ $header2:#2f4f4f ;  //darkslategrey;
 
   }
   nav .logo{
+
     font-size: 33px;
-    color:$header2;
+    color:$secondary;
     font-weight: 600px;
   }
   nav ul{
@@ -40,7 +40,7 @@ $header2:#2f4f4f ;  //darkslategrey;
   nav ul li a{
     text-decoration: none;
     position: relative;
-    color: $header2;
+    color: $secondary;
     font-size: 18px;
     padding:5px 0;
     text-transform: uppercase;
@@ -52,7 +52,7 @@ $header2:#2f4f4f ;  //darkslategrey;
             bottom:0;
             height: 3px;
             width: 100%;
-            background-color: $header2;
+            background-color: $secondary;
             transform: scaleX(0);
             transform-origin: right;
             transition: transform .4s linear;
@@ -62,14 +62,14 @@ $header2:#2f4f4f ;  //darkslategrey;
             transform-origin: left;
             }
   nav ul li a:active:before{
-            color:$header1;
+            color:$secondary;
           }
   nav ul li a.active{
-    color: $header2
+    color: $black;
     }
 
   nav .menu-btn i{
-    color: $header2;
+    color: $secondary;
     font-size: 22px;
     cursor: pointer;
     display: none;
@@ -79,25 +79,68 @@ $header2:#2f4f4f ;  //darkslategrey;
       }
 
 //HEADER;
-      div.bg-img{
 
-          background-image: url(/img/header-gray-2.png);
-          background-size:cover;
-          background-position: center;
-          border-bottom: 10px solid gray;
+  section{
+    position: relative;
+    width: 100%;
+    height: 80vh;
+    display:flex;
+    justify-content: center;
+    align-items:center;
+    overflow: hidden;
 
-           }
+      .content{
+        position: relative;
 
+        z-index: 1;
+        margin: 0 auto;
+        max-width:900px;
+        text-align:left;
+
+         h2{
+           margin: 0;
+           padding: 0;
+           color: #fff;
+           font-size: 5.5em;
+         }
+
+
+         p{
+          color: $white;
+          font-size: 2.5em;
+          }
+      }
+    }
+
+    section:before{
+      content:"";
+      position: absolute;
+      top: 0;
+      left:0;
+      width:100%;
+      height:100%;
+      background: linear-gradient(45deg,$secondary,#B0E0E6);
+      border-radius: 0 0 50% 50%/0 0 100% 100%;
+      transform: scaleX(1.5);
+    }
+
+    .foto-me{
+      z-index: 2;
+      width:15%;
+      margin-right: 15%;
+      border-radius: 40% ;
+
+    }
 
 
 //ABOUT
 div.bio{
-    color:$header2;
+    color:$write;
     background-color:$primary;
     margin:10%;
     display: flex;
     align-items:center;
-    font-size:200%;
+    font-size:150%;
     border: 5px solid darkgrey;
     border-radius: 15px 60px;
 
@@ -113,15 +156,24 @@ div.bio{
     }
 
     //Work!!
+    h1.title-work{
+      margin:15% 15% 0 15%;
+      padding:2%;
+      text-align:center;
+      border-top: 2px solid darkgrey;
+
+    }
 
     div.work{
-      color:$header2;
+      color:$write;
       background-color:$primary;
-      margin:10%;
+      margin:0 10%;
       display:flex;
       border: 5px solid darkgrey;
+      font-size: auto;
       border-radius: 15px 60px;
-      flex-direction: row;
+      flex-wrap: wrap;
+
 
 
 
@@ -132,9 +184,12 @@ div.bio{
           }
 
             .work-html{
+
+              width: 19%;
               margin:3%;
               padding:3%;
               border-right: 1px solid darkslategrey;
+
 
                 i {
                   display: flex;
@@ -145,6 +200,8 @@ div.bio{
             }
 
             .work-css{
+
+              width: 19%;
               margin:3%;
               padding-right:3%;
               padding-top:3%;
@@ -159,6 +216,7 @@ div.bio{
             }
 
             .work-js{
+              width: 19%;
               margin:3%;
               padding-right:3%;
               padding-top: 3%;
@@ -173,6 +231,7 @@ div.bio{
             }
 
             .work-sass{
+              width: 19%;
               margin:3%;
               padding-top: 3%;
 
@@ -204,7 +263,7 @@ div.bio{
         position: fixed;
         top: 60px;
         left: -100%;
-        background-color: $header1;
+        background-color: $white;
         height: 100vh;
         width: 100%;
         display:block;
@@ -224,64 +283,59 @@ div.bio{
         }
         nav ul li a:hover,
         nav ul li a.active {
-        color: $header2;
+        color: $black;
         background-color: none;
         }
 
 
-        //Header!!
+        //Header!! mobile
 
+        section{
+          font-size: 50%;
+          height: 30vh;
 
-        div.write-header{
-        width: 100%;
-        min-height: 20vh;
-        padding-top:10%;
-        padding-left:7%;
-        font-size: auto;
-        color: $header2;
+        }
 
+        .foto-me{
+          width: 30%;
+        }
 
-        .write-header-1{
-            font-size: 30px;
-            text-align: center;
-            }
-        .write-header-2{
-            font-size: 15px;
-            text-align: center;
-            }
-
-            .write-header-3{
-                font-size: 8px;
-                text-align: center;
-                }
-            }
-
-      //About;
+      //About;mobile
 
       div.bio{
         font-size: 100%;
       }
 
-      //work
+      //work;mobile
 
       div.work{
+        flex-wrap: nowrap;
         flex-direction: column;
+
         .work-html{
-          padding:3%;
+          width: 100%;
+          padding:10%;
           border-right: none;
         }
+
         .work-css{
-          padding:3%;
+          width: 100%;
+          padding:10%;
           border-right: none;
         }
+
         .work-js{
-          padding:3%;
+          width: 100%;
+          padding:10%;
           border-right: none;
         }
+
         .work-sass{
-          padding:3%;
+          width: 100%;
+          padding:10%;
           border-right: none;
         }
+
       }
 
   }
@@ -293,64 +347,54 @@ div.bio{
 //TABLET;
 @media only screen and(min-width:441px)and(max-width:900px){
 
-    //HEADER;
+    //HEADER;tablet
+    section{
+      height: 50vh;
+      font-size: 75%;
+    }
+    .foto-me{
+      width: 30%;
+    }
 
-    div.write-header{
-      width: 100%;
-      min-height: 50vh;
-      padding-top:10%;
-      padding-left:7%;
-      font-size: auto;
-      color: $header2;
-
-      .write-header-1{
-            font-size: 45px;
-            text-align: center;
-
-          }
-          .write-header-2{
-            font-size: 25px;
-            text-align: center;
-          }
-
-          .write-header-3{
-            font-size: 18px;
-            text-align: center;
-          }
-        }
+//About;tablet
 
     div.bio{
         font-size: 150%;
-        }
+  }
 
+//work;tablet
+
+    div.work{
+      flex-wrap: wrap;
+      flex-direction:row;
+      .work-html{
+        width: 40%;
+        padding:3%;
+        border-right: none;
+      }
+      .work-css{
+
+        width: 40%;
+        padding:3%;
+        border-right: none;
+      }
+      .work-js{
+        width: 40%;
+        padding:3%;
+        border-right: none;
+      }
+      .work-sass{
+        width: 40%;
+        padding:3%;
+        border-right: none;
+      }
+    }
 }
 //DESKTOP!!
 @media only screen and(min-width:901px){
 
-          //HEADER
-
-          div  .write-header{
-            width: 100%;
-            min-height: 90vh;
-            padding-top:10%;
-            padding-left:7%;
-            font-size: auto;
-            color: $header2;
+          //HEADER;desktop
 
 
-                .write-header-1{
-                  font-size: 100px;
-                  text-align: center;
-                  }
-                .write-header-2{
-                  font-size: 50px;
-                  text-align: center;
-                  }
-
-                .write-header-3{
-                  font-size: 30px;
-                  text-align: center;
-                  }
-              }
 
 }
