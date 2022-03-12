@@ -1,3 +1,9 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap');
+//font-family: 'Dancing Script', cursive;
+
+@import url('https://fonts.googleapis.com/css2?family=Kalam&display=swap');
+//font-family: 'Kalam', cursive;
+
 $primary: 	#d3d3d3 ;  //light-gray;
 $secondary:	#000080 ;  //navy blue;
 $white: #f5f5f5; //white smoke;
@@ -14,11 +20,8 @@ $write:#191970;//midnightblue;
 
 
 //NAV BAR;
-#fixbar{
-  display:fixed;
 
-  z-index: 9999;
-}
+
   nav{
     height: 60px;
     background-color: $white;
@@ -29,11 +32,7 @@ $write:#191970;//midnightblue;
 
   }
   nav .logo{
-
-    font-size: 33px;
-    color:$secondary;
-    font-weight: 600px;
-  }
+    }
   nav ul{
     display: flex;
     list-style: none;
@@ -96,8 +95,8 @@ $write:#191970;//midnightblue;
     overflow: hidden;
 
       .content{
-        position: relative;
 
+        position: relative;
         z-index: 1;
         margin: 0 auto;
         max-width:900px;
@@ -154,12 +153,13 @@ $write:#191970;//midnightblue;
 
           .bio-1{
             margin:6%;
-
+            font-family: 'Kalam', cursive;
           }
           h2{
             text-align: center;
             margin-bottom: 6%;
             font-size: auto;
+            font-family: none;
           }
         }
 
@@ -374,6 +374,7 @@ $write:#191970;//midnightblue;
         nav ul li a:checked ~ nav ul:before{
           left:-100%;
         }
+
 
 
 

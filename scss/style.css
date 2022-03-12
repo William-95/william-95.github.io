@@ -1,11 +1,9 @@
+@import url("https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Kalam&display=swap");
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box; }
-
-#fixbar {
-  display: fixed;
-  z-index: 9999; }
 
 nav {
   height: 60px;
@@ -14,11 +12,6 @@ nav {
   align-items: center;
   justify-content: space-between;
   padding: 0px 50px 0px 100px; }
-
-nav .logo {
-  font-size: 33px;
-  color: #000080;
-  font-weight: 600px; }
 
 nav ul {
   display: flex;
@@ -116,11 +109,13 @@ div.bio {
   border: 5px solid silver;
   border-radius: 15px 60px; }
   div.bio .bio-1 {
-    margin: 6%; }
+    margin: 6%;
+    font-family: 'Kalam', cursive; }
   div.bio h2 {
     text-align: center;
     margin-bottom: 6%;
-    font-size: auto; }
+    font-size: auto;
+    font-family: none; }
 
 h1.title-skill {
   margin: 15% 15% 0 15%;
