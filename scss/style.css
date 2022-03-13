@@ -294,11 +294,12 @@ footer {
     left: -100%; }
 
   section {
-    font-size: 50%;
-    height: 30vh; }
+    font-size: 40%;
+    height: 30vh;
+    margin-top: 35px; }
 
   .foto-me {
-    width: 30%; }
+    width: 20%; }
 
   div.bio {
     font-size: 100%; }
@@ -368,7 +369,7 @@ footer {
     background-color: none; }
 
   section {
-    height: 70vh;
+    height: 80vh;
     font-size: 60%;
     padding-top: 40px; }
 
