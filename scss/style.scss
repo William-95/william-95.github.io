@@ -25,7 +25,12 @@ $write:#191970;//midnightblue;
   nav{
     height: 60px;
     background-color: $white;
-    display:flex;
+    position: fixed;
+    top: 0;
+    left:0;
+    z-index:999;
+    width: 100%;
+    display: flex;
     align-items: center;
     justify-content: space-between;
     padding: 0px 50px 0px 100px;
@@ -62,6 +67,9 @@ $write:#191970;//midnightblue;
             transform-origin: right;
             transition: transform .4s linear;
             }
+  nav ul li a:hover{
+            color:$black;
+            }
   nav ul li a:hover:before{
             transform: scaleX(1);
             transform-origin: left;
@@ -70,8 +78,11 @@ $write:#191970;//midnightblue;
             color:$secondary;
           }
   nav ul li a.active{
-    color: $black;
+    color: $write;
     }
+    nav ul li a.active:hover{
+              color:$black;
+              }
 
   nav .menu-btn i{
     color: $secondary;
@@ -324,57 +335,66 @@ $write:#191970;//midnightblue;
 
 //NAVBAR;mobile
 
-  nav{
-    position: fixed;
-    top: 0;
-    right:0;
-    width: 100%;
-    height: 45px;
-    z-index: 9999;
+nav{
+  position: fixed;
+  top: 0;
+  right:0;
+  width: 100%;
+  height: 45px;
+  z-index: 9999;
 
-  }
-        nav .menu-btn i{
-        display:block;
+}
+      nav .menu-btn i{
+      display:block;
 
 
+      }
+
+
+      #click:checked ~ .menu-btn i:before{
+      content: "\f00d"; //appare croce nel menu piccolo;
         }
 
+      nav ul{ //passaggio a menu mobile;
+      position: fixed;
+      top: 45px;
+      left: -100%;
+      background-color: $white;
+      height: 35vh;
+      width: 100%;
+      border-bottom:3px solid gray;
+      border-radius:0 0 0 25%;
+      display:block;
+      text-align: center;
+      transition: all 0.3s ease;
+      z-index: 99999;
+      }
 
-        #click:checked ~ .menu-btn i:before{
-        content: "\f00d"; //appare croce nel menu piccolo;
-          }
-        nav ul{ //passaggio a menu piccolo decorazione;
+
+      #click:checked ~ ul{
+        left:0%;
+        }
+
+      nav ul li{
+      margin: 40px 0px;
+      }
+      nav ul li a{
+      font-size: 20px;
+      display:block;
+
+      }
+      nav ul li a:hover {
+      color: $black;
+      background-color: none;
+      }
+      nav ul li a ~ nav ul:before{
         position: fixed;
         top: 45px;
-        left: -100%;
-        background-color: $white;
-        height: 100vh;
-        width: 100%;
-        display:block;
-        text-align: center;
-        transition: all 0.3s ease;
-        z-index: 99999;
+        left:0%;
+      }
+      nav ul li a:checked ~ ul:after{
+        left:-100%;
         }
-        #click:checked ~ ul{
-          left:0%;
-          }
-        nav ul li{
-        margin: 40px 0px;
-        }
-        nav ul li a{
-        font-size: 20px;
-        display:block;
-
-        }
-        nav ul li a:hover,
-        nav ul li a.active {
-        color: $black;
-        background-color: none;
-        }
-        nav ul li a:checked ~ nav ul:before{
-          left:-100%;
-        }
-
 
 
 
@@ -446,12 +466,9 @@ $write:#191970;//midnightblue;
         width: 100%;
         height: 45px;
         z-index: 9999;
-
       }
             nav .menu-btn i{
             display:block;
-
-
             }
 
 
@@ -463,8 +480,10 @@ $write:#191970;//midnightblue;
             top: 45px;
             left: -100%;
             background-color: $white;
-            height: 100vh;
+            height: 45vh;
             width: 100%;
+            border-bottom:3px solid gray;
+            border-radius:0 0 0 25%;
             display:block;
             text-align: center;
             transition: all 0.3s ease;
