@@ -358,7 +358,7 @@ nav{
       nav ul{ //passaggio a menu mobile;
       position: fixed;
       top: 45px;
-      left: -100%;
+      right: -100%;
       background-color: $white;
       height: 50vh;
       width: 100%;
@@ -372,7 +372,7 @@ nav{
 
 
       #click:checked ~ ul{
-        left:0%;
+        right:0%;
         }
 
       nav ul li{
@@ -478,9 +478,9 @@ nav{
             nav ul{ //passaggio a menu piccolo decorazione;
             position: fixed;
             top: 45px;
-            left: -100%;
+            right: -100%;
             background-color: $white;
-            height: 80vh;
+            height: 85vh;
             width: 100%;
             border-bottom:3px solid gray;
             border-radius:0 0 0 25%;
@@ -488,9 +488,10 @@ nav{
             text-align: center;
             transition: all 0.3s ease;
             z-index: 99999;
+            overflow: auto;
             }
             #click:checked ~ ul{
-              left:0%;
+              right:0%;
               }
             nav ul li{
             margin: 40px 0px;

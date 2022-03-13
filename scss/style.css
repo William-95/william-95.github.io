@@ -260,7 +260,7 @@ footer {
   nav ul {
     position: fixed;
     top: 45px;
-    left: -100%;
+    right: -100%;
     background-color: #f5f5f5;
     height: 50vh;
     width: 100%;
@@ -272,7 +272,7 @@ footer {
     z-index: 99999; }
 
   #click:checked ~ ul {
-    left: 0%; }
+    right: 0%; }
 
   nav ul li {
     margin: 40px 0px; }
@@ -340,19 +340,20 @@ footer {
   nav ul {
     position: fixed;
     top: 45px;
-    left: -100%;
+    right: -100%;
     background-color: #f5f5f5;
-    height: 80vh;
+    height: 85vh;
     width: 100%;
     border-bottom: 3px solid gray;
     border-radius: 0 0 0 25%;
     display: block;
     text-align: center;
     transition: all 0.3s ease;
-    z-index: 99999; }
+    z-index: 99999;
+    overflow: auto; }
 
   #click:checked ~ ul {
-    left: 0%; }
+    right: 0%; }
 
   nav ul li {
     margin: 40px 0px; }
