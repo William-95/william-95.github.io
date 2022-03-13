@@ -348,12 +348,12 @@ footer {
     background-color: none; }
 
   section {
-    height: 60vh;
+    height: 40vh;
     font-size: 60%;
-    margin-top: 45px; }
+    padding-top: 40px; }
 
   .foto-me {
-    width: 25%; }
+    width: 20%; }
 
   div.bio {
     font-size: 150%; }
