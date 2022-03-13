@@ -331,7 +331,7 @@ $write:#191970;//midnightblue;
       }
 
 //MOBILE;
-  @media only screen and(max-width:440px){
+  @media only screen and(max-width:767px){
 
 //NAVBAR;mobile
 
@@ -456,7 +456,7 @@ nav{
 
 
 //TABLET;
-  @media only screen and(min-width:441px)and(max-width:900px){
+  @media only screen and(min-width:768px)and(max-width:1023px){
 
     //NAVBAR;tablet
 
@@ -481,7 +481,7 @@ nav{
             top: 45px;
             right: -100%;
             background-color: $white;
-            height: 85vh;
+            height: 60vh;//85
             width: 100%;
             border-bottom:3px solid gray;
             border-radius:0 0 0 25%;
@@ -556,7 +556,7 @@ nav{
     }
 }
 //DESKTOP!!
-@media only screen and(min-width:901px){
+@media only screen and(min-width:1024px){
 
 //HEADER;desktop
 
