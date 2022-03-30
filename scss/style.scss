@@ -6,13 +6,16 @@ $black: #000000; // black;
 $write: #191970; //midnightblue;
 //start;
 
+html {
+  scroll-behavior: smooth;
+}
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 //NAV BAR;
-
 nav {
   height: 60px;
   background-color: $white;
