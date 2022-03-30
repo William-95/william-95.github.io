@@ -438,6 +438,11 @@ form {
       border-right: none;
     }
   }
+
+  form {
+    padding: 10%;
+    height: 70vh;
+  }
 }
 //TABLET;
 @media only screen and(min-width:768px)and(max-width:1023px) {
@@ -536,5 +541,10 @@ form {
       padding: 3%;
       border-right: none;
     }
+  }
+
+  form {
+    padding: 10%;
+    height: 80vh;
   }
 }

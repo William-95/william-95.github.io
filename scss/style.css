@@ -332,7 +332,11 @@ form {
     div.skill .skill-sass {
       width: 100%;
       padding: 10%;
-      border-right: none; } }
+      border-right: none; }
+
+  form {
+    padding: 10%;
+    height: 70vh; } }
 @media only screen and (min-width: 768px) and (max-width: 1023px) {
   nav {
     position: fixed;
@@ -407,6 +411,10 @@ form {
     div.skill .skill-sass {
       width: 40%;
       padding: 3%;
-      border-right: none; } }
+      border-right: none; }
+
+  form {
+    padding: 10%;
+    height: 80vh; } }
 
 /*# sourceMappingURL=style.css.map */
