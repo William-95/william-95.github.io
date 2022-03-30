@@ -324,12 +324,22 @@ $write:#191970;//midnightblue;
     .whatsapp a:hover{
         background-color:#118c7e;
       }
+
+//form email;
       form{
         padding:10% 25%;
         font-size: 2rem;
         display: flex;
         flex-direction: column;
+        background: linear-gradient(45deg,$secondary,#B0E0E6);
 
+          .spazio-testo{
+            margin:2% 0;
+            padding:2% 1%;
+            font-size: 1.2rem;
+            border:2px solid silver;
+            border-radius:5%;
+          }
           .invio{
             width: 50%;
             padding:10px;

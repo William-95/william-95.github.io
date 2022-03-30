@@ -6,17 +6,16 @@
   <link rel="icon" href="img/favicon-16.png" type="image/png">
   <title>Email</title>
   <link rel="stylesheet" href="./scss/style.css">
+  <script src="file.js"></script>
   <!--Js icon-->
   <script src="https://kit.fontawesome.com/f1335713d8.js" crossorigin="anonymous"></script>
   <!--for email-->
   <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
-   <script type="text/javascript"> (function() { // https://dashboard.emailjs.com/admin/integration
-     emailjs.init('rKJnAQ53C-kMeslKWmUOZ'); })(); </script>
-   <script type="text/javascript"> window.onload = function() { document.getElementById('contact-form').addEventListener('submit', function(event) { event.preventDefault(); // generate a five digit number for the contact_number variable
-      this.contact_number.value = Math.random() * 100000 | 0; // these IDs from the previous steps
-      emailjs.sendForm('contact_service', 'contact_form', this) .then(function() { console.log('SUCCESS!'); }, function(error) { console.log('FAILED...', error); }); }); } </script>
-})();
-</script>
+  <script type="text/javascript">
+    (function() {
+    emailjs.init("eBz7c3PqvtMCQIosz");
+  })();
+  </script>
 
 
 </head>
@@ -31,10 +30,10 @@
       <i class="fas fa-bars"></i>
     </label>
     <ul class="link-list">
-      <li> <a class="active" href="index.html/#s1">Home</a></li>
-      <li> <a href="/index.html/#s2">About</a> </li>
-      <li> <a href="/index.html/#s3">Skill</a> </li>
-      <li> <a href="/index.html/#s4">Contact</a> </li>
+      <li> <a class="active" href="/#s1/index.html">Home</a></li>
+      <li> <a href="/#s2/index.html">About</a> </li>
+      <li> <a href="/#s3/index.html">Skill</a> </li>
+      <li> <a href="/#s4/index.html">Contact</a> </li>
     </ul>
   </nav>
 
@@ -43,12 +42,12 @@
   <form id="contact-form">
         <input type="hidden" name="contact_number">
         <label>Name</label>
-        <input type="text" name="user_name">
+        <input type="text" id="user_name" class="spazio-testo">
         <label>Email</label>
-        <input type="email" name="user_email">
+        <input type="email" id="user_email" class="spazio-testo">
         <label>Message</label>
-        <textarea name="message"></textarea>
-        <input type="submit" value="Send"class="invio">
+        <textarea id="message" class="spazio-testo"></textarea>
+        <input onclick="sendMail()" type="submit" value="Send"class="invio">
     </form>
   <!-- Footer -->
 

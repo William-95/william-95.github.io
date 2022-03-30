@@ -245,7 +245,14 @@ form {
   padding: 10% 25%;
   font-size: 2rem;
   display: flex;
-  flex-direction: column; }
+  flex-direction: column;
+  background: linear-gradient(45deg, #000080, #B0E0E6); }
+  form .spazio-testo {
+    margin: 2% 0;
+    padding: 2% 1%;
+    font-size: 1.2rem;
+    border: 2px solid silver;
+    border-radius: 5%; }
   form .invio {
     width: 50%;
     padding: 10px;
