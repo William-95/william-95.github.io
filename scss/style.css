@@ -241,6 +241,18 @@ footer {
 .whatsapp a:hover {
   background-color: #118c7e; }
 
+form {
+  padding: 10% 25%;
+  font-size: 2rem;
+  display: flex;
+  flex-direction: column; }
+  form .invio {
+    width: 50%;
+    padding: 10px;
+    margin-top: 50px;
+    margin-left: 25%;
+    justify-content: center; }
+
 @media only screen and (max-width: 767px) {
   nav {
     position: fixed;
